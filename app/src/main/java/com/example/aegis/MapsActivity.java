@@ -161,6 +161,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 } else {
                                     userProfile = new UserProfile("Unknown", "Unknown");
                                 }
+                                System.out.println("Current User: " + currentUser.getUid() + " " + userId);
                                 if (userLocation.getHelpText() != null && userLocation.getHelpText().trim().length() > 0 && !currentUser.getUid().equalsIgnoreCase(userId)) {
                                     showAlert(userProfile, userLocation.getHelpText());
                                 }
@@ -206,7 +207,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
 
         alert.setTitle(String.format("Buddy needs your help!"));
-        alert.setMessage(String.format("\"%s\" needs help. Can you assist her?", userProfile.getName()));
+        alert.setMessage(String.format("\"%s\" needs help. Can you assist %s?", userProfile.getName(), userProfile.getGender().equalsIgnoreCase(getString(R.string.male))?"him":"her"));
 
 // Set an EditText view to get user input
 //        final EditText input = new EditText(this);
