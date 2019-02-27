@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aegis</string>
+    <string name="enter_usename">username</string>
+    <string name="button_login">Log In</string>
+    <string name="enter_pass">password</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
