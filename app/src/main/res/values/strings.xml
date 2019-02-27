@@ -4,4 +4,10 @@
     <string name="button_login">Log In</string>
     <string name="enter_pass">password</string>
     <string name="title_activity_maps">Map</string>
+    <string name="panicbutton">PANIC</string>
+    <string name="my_location">My Location</string>
+    <string name="profile">Edit Profile</string>
+    <string name="add_friends">Add Friends</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
 </resources>
